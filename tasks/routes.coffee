@@ -1,4 +1,4 @@
 module.exports =
 
   routes:
-    root: '/'
+    root: '/gulp_scaffold/dist/'
