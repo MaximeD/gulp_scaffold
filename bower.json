@@ -1,0 +1,23 @@
+{
+  "name": "Gulp scaffold",
+  "version": "0.0.1",
+  "authors": [
+    "Maxime Demolin <akbarova.armia@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.5",
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.5",
+    "font-awesome": "fontawesome#~4.4.0",
+    "fontawesome": "~4.4.0"
+  }
+}

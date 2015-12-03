@@ -1,0 +1,17 @@
+doctype html
+html(lang='fr')
+  block vars
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description' content='')
+    meta(name='keywords' content='')
+    title #{title}
+    link(rel='stylesheet', href='/css/all.css')
+    link(rel='shortcut icon' type='image/ico' href='/images/favicon.ico')
+  body
+    block content
+
+script(src="//code.jquery.com/jquery-1.11.3.min.js")
+script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js' integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous")
+script(src='/js/all-min.js')

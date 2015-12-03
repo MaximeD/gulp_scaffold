@@ -1,0 +1,33 @@
+{
+  "name": "gulp_scaffold",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "bower": "~1.5.3",
+    "browser-sync": "~2.9.8",
+    "gulp": "~3.9.0",
+    "gulp-coffee": "~2.3.1",
+    "gulp-concat": "~2.6.0",
+    "gulp-imagemin": "~2.3.0",
+    "gulp-minify": "~0.0.5",
+    "gulp-minify-html": "~1.0.4",
+    "gulp-plumber": "~1.0.1",
+    "gulp-ruby-haml": "~0.0.4",
+    "gulp-sass": "~2.0.4",
+    "gulp-uglify": "~1.4.1",
+    "gulp-util": "~3.0.6",
+    "gulp-wrap": "~0.11.0",
+    "imagemin-pngquant": "~4.2.0"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.10.0",
+    "gulp": "^3.9.0",
+    "gulp-bower": "0.0.10",
+    "gulp-jade": "^1.1.0",
+    "gulp-sitemap": "^2.2.0",
+    "require-dir": "^0.3.0"
+  },
+  "author": "Maxime Demolin <akbarova.armia@gmail.com>",
+  "license": "MIT"
+}
