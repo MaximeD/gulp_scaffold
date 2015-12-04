@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <!-- Title of page-->
+  <!-- Url to use in code-->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,25 +12,81 @@
     <link rel="shortcut icon" type="image/ico" href="/gulp_scaffold/dist/images/favicon.ico">
   </head>
   <body><a href="https://github.com/MaximeD/gulp_scaffold"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
-    <div class="jumbotron">
+    <div class="jumbotron"><img src="/gulp_scaffold/dist/images/gulp.png" class="gulp-icon">
       <h1>Gulp Scaffold</h1>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <p>
-          Scaffold to write a static website using:
-          
-        </p>
-        <ul>
-          <li><a href="http://jade-lang.com/">jade</a></li>
-          <li><a href="http://coffeescript.org/">coffeescript</a></li>
-          <li><a href="http://sass-lang.com/">scss</a></li>
-          <li>images minification</li>
-        </ul>
+    <div class="block bilboa-flower">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>This a demo of using <a href="https://github.com/MaximeD/gulp_scaffold/">gulp_scaffold</a>
+              to quickly write a static website with gulp using:
+              
+            </p>
+            <ul>
+              <li><a href="http://jade-lang.com/">jade</a></li>
+              <li><a href="http://coffeescript.org/">coffeescript</a></li>
+              <li><a href="http://sass-lang.com/">scss</a></li>
+              <li><a href="http://getbootstrap.com/">boostrap</a></li>
+              <li><a href="https://fortawesome.github.io/Font-Awesome/">fontawesome</a></li>
+              <li>images minification</li>
+            </ul>
+            <h2><i class="fa fa-gift"></i> Goodies</h2>
+            <p>
+              Jade, coffeescript and sass are used as replacement of html, javascript and css.
+              You can focus on what you write and we will compile everything for you.
+              
+              
+            </p>
+            <h2><i class="fa fa-css3"></i> Boostrap integration</h2>
+            <p>
+              Bootstrap is shipped, which mean you can override its variables.
+              Just redeclare them in <a href="https://github.com/MaximeD/gulp_scaffold/blob/master/src/assets/stylesheets/variables.scss">variables.scss</a>
+              (or anywhere else in <a href="https://github.com/MaximeD/gulp_scaffold/blob/master/src/assets/stylesheets/">stylesheets</a>)
+              and Bootstrap will be compiled using them.
+              
+            </p>
+            <p>
+              We also included fontawesome because we know you love all of those icons!
+              
+              
+            </p>
+            <h2><i class="fa fa-compress"></i> Minification and compression</h2>
+            <p>
+              It will be just about anywhere:
+              your html, css and js will minified,
+              and all images will be compressed without requiring any action from your side.
+              Faster load times, happier users!
+              
+              
+            </p>
+            <h2><i class="fa fa-road"></i> Routing (well sort of…)</h2>
+            <p>
+              Aren't you bored to write all your urls manually?
+              What if instead of writing <code>a(href='blog/why-i-love-gulp.html')</code>
+              your could just have <code>a(href=routes.blog.gulp)</code> and reuse it everywhere?
+              Well you can!
+              Just write your routes inside <a href="https://github.com/MaximeD/gulp_scaffold/blob/master/tasks/routes.coffee">tasks/routes.coffee</a>
+              and those variables will be available in all of your views!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Show current page code-->
+    <div class="block just-right">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Here is the <a href="https://raw.githubusercontent.com/MaximeD/gulp_scaffold/gh-pages/src/views/index.jade">view code</a> for this page.</p>
+            <pre class="prettyprint"><code data-url="https://raw.githubusercontent.com/MaximeD/gulp_scaffold/gh-pages/src/views/index.jade" class="github-file"></code></pre>
+          </div>
+        </div>
       </div>
     </div>
   </body>
 </html>
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autorun=false&amp;skin=desert"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 <script src="/gulp_scaffold/dist/js/all-min.js"></script>

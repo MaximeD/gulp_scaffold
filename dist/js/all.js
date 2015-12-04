@@ -1,0 +1,1 @@
+var $el,el,i,len,ref;for(ref=$(".github-file"),i=0,len=ref.length;len>i;i++)el=ref[i],$el=$(el),$.get($el.data("url"),function(e){return el.innerHTML=e,PR.prettyPrint()});

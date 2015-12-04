@@ -1,22 +1,68 @@
 block vars
-  - var title = 'Gulp Scaffold'
+  // Title of page
+  - var title    = 'Gulp Scaffold'
+  // Url to use in code
+  - var page_url = routes.github.raw_page_root + 'src/views/index.jade'
 
+// Use layout defined in `/src/templates/layout.jade`
 extends /layout
 
 block content
   .jumbotron
+    img(src=routes.root + 'images/gulp.png', class='gulp-icon')
     h1 Gulp Scaffold
     
-  .row
-    .col-md-12
-      p.
-        Scaffold to write a static website using:
-        
-      ul
-        li
-          a(href='http://jade-lang.com/') jade
-        li
-          a(href='http://coffeescript.org/') coffeescript
-        li
-          a(href='http://sass-lang.com/') scss
-        li images minification
+  .block.bilboa-flower
+    .container
+      .row
+        .col-md-12
+          p.
+            This a demo of using #[a(href=routes.github.root) gulp_scaffold]
+            to quickly write a static website with gulp using:
+
+          ul
+            li #[a(href='http://jade-lang.com/') jade]
+            li #[a(href='http://coffeescript.org/') coffeescript]
+            li #[a(href='http://sass-lang.com/') scss]
+            li #[a(href='http://getbootstrap.com/') boostrap]
+            li #[a(href='https://fortawesome.github.io/Font-Awesome/') fontawesome]
+            li images minification
+
+
+          h2 #[i.fa.fa-gift] Goodies
+
+          p.
+            Jade, coffeescript and sass are used as replacement of html, javascript and css.
+            You can focus on what you write and we will compile everything for you.
+
+
+          h2 #[i.fa.fa-css3] Boostrap integration
+
+          p.
+            Bootstrap is shipped, which mean you can override its variables.
+            Just redeclare them in #[a(href=routes.github.root + 'blob/master/src/assets/stylesheets/variables.scss') variables.scss]
+            (or anywhere else in #[a(href=routes.github.root + 'blob/master/src/assets/stylesheets/') stylesheets])
+            and Bootstrap will be compiled using them.
+
+          p.
+            We also included fontawesome because we know you love all of those icons!
+
+
+          h2 #[i.fa.fa-compress] Minification and compression
+
+          p.
+            It will be just about anywhere:
+            your html, css and js will minified,
+            and all images will be compressed without requiring any action from your side.
+            Faster load times, happier users!
+
+
+          h2 #[i.fa.fa-road] Routing (well sort of…)
+
+          p.
+            Aren't you bored to write all your urls manually?
+            What if instead of writing #[code a(href='blog/why-i-love-gulp.html')]
+            your could just have #[code a(href=routes.blog.gulp)] and reuse it everywhere?
+            Well you can!
+            Just write your routes inside #[a(href=routes.github.root + 'blob/master/tasks/routes.coffee') tasks/routes.coffee]
+            and those variables will be available in all of your views!
