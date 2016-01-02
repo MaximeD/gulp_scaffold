@@ -1,3 +1,6 @@
+Take a look at the [demo](http://maximed.github.io/gulp_scaffold/dist/)
+and the code [ code](https://github.com/MaximeD/gulp_scaffold/tree/gh-pages) running it.
+
 # Structure
 
 Files for development are stored in `src/`
