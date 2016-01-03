@@ -7,6 +7,7 @@ concat      = require 'gulp-concat'
 gutil       = require 'gulp-util'
 imagemin    = require 'gulp-imagemin'
 minify      = require 'gulp-minify'
+nano        = require 'gulp-cssnano'
 plumber     = require 'gulp-plumber'
 pngquant    = require 'imagemin-pngquant'
 sass        = require 'gulp-sass'
@@ -56,6 +57,7 @@ gulp.task 'sass', ->
     )
   )
   .pipe(concat('all.css'))
+  .pipe(nano())
   .pipe(gulp.dest(paths.destination.css))
 
 
