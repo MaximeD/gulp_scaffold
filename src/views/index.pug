@@ -1,17 +1,16 @@
+extends /layout
+
 block vars
   // Title of page
   - var title    = 'Gulp Scaffold'
   // Url to use in code
-  - var page_url = routes.github.raw_page_root + 'src/views/index.jade'
-
-// Use layout defined in `/src/templates/layout.jade`
-extends /layout
+  - var page_url = routes.github.raw_page_root + 'src/views/index.pug'
 
 block content
   .jumbotron
     img(src=routes.root + 'images/gulp.png', class='gulp-icon')
     h1 Gulp Scaffold
-    
+
   .block.bilboa-flower
     .container
       .row
@@ -21,10 +20,10 @@ block content
             to quickly write a static website with gulp using:
 
           ul
-            li #[a(href='http://jade-lang.com/') jade]
+            li #[a(href='http://jade-lang.com/') pug]
             li #[a(href='http://coffeescript.org/') coffeescript]
             li #[a(href='http://sass-lang.com/') scss]
-            li #[a(href='http://getbootstrap.com/') boostrap]
+            li #[a(href='http://getbootstrap.com/') bootstrap]
             li #[a(href='https://fortawesome.github.io/Font-Awesome/') fontawesome]
             li images minification
 
@@ -32,11 +31,11 @@ block content
           h2 #[i.fa.fa-gift] Goodies
 
           p.
-            Jade, coffeescript and sass are used as replacement of html, javascript and css.
+            Pug, coffeescript and sass are used as replacement of html, javascript and css.
             You can focus on what you write and we will compile everything for you.
 
 
-          h2 #[i.fa.fa-css3] Boostrap integration
+          h2 #[i.fa.fa-css3] Bootstrap integration
 
           p.
             Bootstrap is shipped, which mean you can override its variables.
