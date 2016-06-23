@@ -20,7 +20,7 @@ module.exports =
       sass:          'src/assets/stylesheets/*.scss'
       static_assets: 'src/assets/static/**/*'
       templates:     'src/templates/'
-      views:         'src/views/**/*.jade'
+      views:         'src/views/**/*.pug'
 
     destination:
       root:        'dist'
