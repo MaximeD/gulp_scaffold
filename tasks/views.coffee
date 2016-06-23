@@ -1,17 +1,17 @@
 gulp   = require 'gulp'
 paths  = require('./config').paths
+pug    = require 'gulp-pug'
 routes = require('./routes').routes
-jade   = require 'gulp-jade'
 
-# Compile jade templates
+# Compile pug templates
 gulp.task 'templates', ->
   gulp.src(paths.source.templates)
-    .pipe(jade({pretty: true, locals: {routes: routes}}))
+    .pipe(pug({pretty: true, locals: {routes: routes}}))
 
-# Create views from jade files
+# Create views from pug files
 gulp.task 'views', ->
   gulp.src(paths.source.views)
-    .pipe(jade({pretty: true, basedir: paths.source.templates, locals: {routes: routes}}))
+    .pipe(pug({pretty: true, basedir: paths.source.templates, locals: {routes: routes}}))
     .pipe(gulp.dest(paths.destination.root))
 
 

@@ -62,7 +62,7 @@ The result will be one single file available in `/dist/css/all.css`.
 You can write here templates you want to inherit from / include in other files.
 Typically, you will have a layout, a footer, etc.
 
-This files are written using [jade](http://jade-lang.com/),
+This files are written using [pug](http://jade-lang.com/),
 so have a look at its [documentation](http://jade-lang.com/reference/) to see what is available.
 
 Templates are not written anywhere for they are to be used by views.
@@ -70,10 +70,10 @@ Templates are not written anywhere for they are to be used by views.
 ## `src/views`
 
 Your views to produce resulting `html`.
-They can inherit or include templates and are also written using [jade](http://jade-lang.com/).
+They can inherit or include templates and are also written using [pug](http://jade-lang.com/).
 
 They will be built at the root of `/dist`, honoring their path,
-so `/src/views/blog/article.jade` will be inside `/dist/blog/article.html`.
+so `/src/views/blog/article.pug` will be inside `/dist/blog/article.html`.
 
 
 # Configuration
@@ -84,11 +84,11 @@ The only file you need to customize is `/tasks/routes.coffee`.
 Basically you will want to write here mapping for view files.
 This is a matter of taste,
 but I just find it way more convenient to write:
-```jade
+```pug
 a(href=routes.blog.about_gulp)
 ```
 rather than
-```jade
+```pug
 a(href='/blog/why-gulp-rocks.html')
 ```
 
