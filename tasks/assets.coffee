@@ -6,7 +6,6 @@ coffee      = require 'gulp-coffee'
 concat      = require 'gulp-concat'
 gutil       = require 'gulp-util'
 imagemin    = require 'gulp-imagemin'
-minify      = require 'gulp-minify'
 nano        = require 'gulp-cssnano'
 plumber     = require 'gulp-plumber'
 pngquant    = require 'imagemin-pngquant'
@@ -31,7 +30,6 @@ gulp.task 'coffee', ->
     .pipe(coffee({bare: true}).on('error', gutil.log))
     .pipe(concat('all.js'))
     .pipe(uglify())
-    .pipe(minify())
     .pipe(gulp.dest(paths.destination.javascripts))
 
 
